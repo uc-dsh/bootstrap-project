@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/main_sass/main.css">
     <link rel="stylesheet" href="https://www.ucertify.com/layout/themes/bootstrap4/ux/css/bootstrap4.css">
     <link rel="stylesheet" href="https://www.ucertify.com/utils/?util=icomoon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 </head>
 
 <body>
@@ -30,8 +33,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <span aria-hidden="true" class="icomoon-new-24px-envelop-2"></span>
+                            <a class="nav-link d-flex align-items-center" href="#">
+                                <span aria-hidden="true" class="icomoon-new-24px-envelop-2 mr-1"></span>
                                 <span class="d-none d-md-inline">Inbox</span>
                             </a>
                         </li>
@@ -53,19 +56,21 @@
             <div class="row mx-0 mb-sm-3 mb-2 pt-2">
                 <div class="col-md-7 px-0 py-1 p-md-0 row m-0">
                     <div class="col-4 p-0">
-                        <select class="form-control " >
-                            <option value="uCertify">uCertify</option>
+                        <select class="form-control form-control-md select2 font-weight-normal select2-hidden-accessible">
+                            <option value="uCertify" selected>uCertify</option>
+                            <option value="Second Option">Second Option</option>
                         </select>
                     </div>
                     <div class="col-8">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-light">
-                                <span aria-hidden="true" class="icomoon-roster-sm"></span>
+                            <button type="button" class="btn btn-light d-flex align-items-center">
+                                <span aria-hidden="true" class="icomoon-roster-sm mt-sm2 mr-1"></span>
                                 <span class="d-none d-md-inline">Roster</span>
                             </button>
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span aria-hidden="true" class="icomoon-24px-project-management"></span>
+                            <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span aria-hidden="true" class="icomoon-24px-project-management mt-sm2 mr-1"></span>
                                 <span class="d-none d-md-inline">Manage</span>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -73,9 +78,9 @@
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-                            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownEnroll"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span aria-hidden="true" class="icomoon-reports-sm"></span>
+                            <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button"
+                                id="dropdownEnroll" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span aria-hidden="true" class="icomoon-reports-sm mt-sm2 mr-1"></span>
                                 <span class="d-none d-md-inline">Report</span>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownEnroll">
@@ -83,8 +88,8 @@
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
-                            <button type="button" class="btn btn-light">
-                                <span aria-hidden="true" class="icomoon-add-license-enroll-sm"></span>
+                            <button type="button" class="btn btn-light d-flex align-items-center">
+                                <span aria-hidden="true" class="icomoon-add-license-enroll-sm mt-sm2 mr-1"></span>
                                 <span class="d-none d-md-inline">Enroll</span>
                             </button>
                         </div>
@@ -110,12 +115,12 @@
                         <span aria-hidden="true" class=" icomoon-search-3"></span>
                     </button>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-light">
-                            <span aria-hidden="true" class="icomoon-roster-sm"></span>
+                        <button type="button" class="btn btn-light d-flex align-items-center">
+                            <span aria-hidden="true" class="icomoon-roster-sm mt-sm2 mr-1"></span>
                             <span class="d-none d-md-inline">Roster</span>
                         </button>
-                        <button type="button" class="btn btn-light">
-                            <span aria-hidden="true" class="icomoon-lesson-sm"></span>
+                        <button type="button" class="btn btn-light d-flex align-items-center">
+                            <span aria-hidden="true" class="icomoon-lesson-sm m-t-xxs mr-1"></span>
                             <span class="d-none d-md-inline">Lessons</span>
                         </button>
                         <button type="button" class="btn btn-light">
@@ -158,8 +163,8 @@
                         <tr>
                             <td>
                                 <div class="d-flex justify-content-center h-100 align-items-center">
-                                    <input type="checkbox" class="checkbox from-check-input p-0" />
-                                    <div class="border-0 bg-white dropdown-toggle p-1 no-lineheight ml-1"></div>
+                                    <input type="checkbox" class="custom_checkbox_new p-0" />
+                                    <div class="border-0 bg-white dropdown-toggle p-1 py-2 no-lineheight ml-1"></div>
                                 </div>
                             </td>
                             <td>
@@ -217,7 +222,7 @@
                             <td>
                                 <br />
                                 <div class="h-100 align-items-center d-flex">
-                                    <input type="checkbox" disabled id="id_select1" />
+                                    <input type="checkbox" class="custom_checkbox_new mr-1" disabled id="id_select1" />
                                     <span for="id_select1">1</span>
                                 </div>
                             </td>
@@ -239,7 +244,8 @@
                                 Dhiru Verma<br /><span class="badge badge-primary">New</span>
                             </td>
                             <td class="text-center">
-                                <svg viewBox="0 0 70 70" width="20px" fill="none" class="rounded-circle bg-light" transform="rotate(-90)">
+                                <svg viewBox="0 0 70 70" width="20px" fill="none" class="rounded-circle bg-light"
+                                    transform="rotate(-90)">
                                     <circle r="23.4%" cx="50%" cy="50%" stroke="green" stroke-width="32"
                                         style="stroke-dasharray: 58 100;"></circle>
                                 </svg>
@@ -276,12 +282,16 @@
                         <tr>
                             <td>
                                 <br />
-                                <input type="checkbox" id="id_select2" />
-                                <span for="id_select2">2</span>
+                                <div class="d-flex ">
+                                    <input type="checkbox" class="mr-1 custom_checkbox_new" id="id_select2" />
+                                    <span for="id_select2">2</span>
+                                </div>
                             </td>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <div class="bg-success height35 width34 rounded-circle text-white d-flex align-items-center justify-content-center mr-1" >AP</div>
+                                    <div
+                                        class="bg-success height35 width34 rounded-circle text-white d-flex align-items-center justify-content-center mr-1">
+                                        AP</div>
                                     Abhishek Pan...
                                 </div>
                             </td>
@@ -297,7 +307,8 @@
                                 Swati Kesarwani<br /><span class="badge badge-primary">Merged Shambunath AP</span>
                             </td>
                             <td class="text-center">
-                                <svg viewBox="0 0 70 70" width="20px" fill="none" class="rounded-circle bg-light" transform="rotate(-90)">
+                                <svg viewBox="0 0 70 70" width="20px" fill="none" class="rounded-circle bg-light"
+                                    transform="rotate(-90)">
                                     <circle r="23.4%" cx="50%" cy="50%" stroke="green" fill="none" stroke-width="32"
                                         style="stroke-dasharray: 64 100;"></circle>
                                 </svg>
@@ -346,6 +357,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+        $('.select2').select2({
+            placeholder: 'This is my placeholder',
+            allowClear: true
+          });
+    </script>
 </body>
 
 </html>
